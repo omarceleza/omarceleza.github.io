@@ -1,10 +1,570 @@
 <!DOCTYPE html>
 <html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head>
-    <title>Portal - O Marceleza</title><meta name="gridsome:hash" content="82df50eab87ff992bd657dd5b5057aa190c7b893"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.2d9731c0f07949a850f50077ae1e3731.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.2d9731c0f07949a850f50077ae1e3731.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.2d9731c0f07949a850f50077ae1e3731.png"><link rel="preload" href="/assets/css/4.styles.e751bd8d.css" as="style"><link rel="preload" href="/assets/js/app.ab9c5987.js" as="script"><link rel="preload" href="/assets/js/page--src--pages--index-vue.616516de.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.44fb8f5e.js"><link rel="prefetch" href="/assets/js/page--src--pages--sobre-vue.c84d8d65.js"><link rel="stylesheet" href="/assets/css/4.styles.e751bd8d.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+    <title>Portal - O Marceleza</title><meta name="gridsome:hash" content="c42effb131b5fa00fb9a8fa25115a96dfc602215"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.2d9731c0f07949a850f50077ae1e3731.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.2d9731c0f07949a850f50077ae1e3731.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.2d9731c0f07949a850f50077ae1e3731.png"><link data-vue-tag="ssr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link data-vue-tag="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="preload" href="/assets/css/4.styles.2effc172.css" as="style"><link rel="preload" href="/assets/js/app.189aa255.js" as="script"><link rel="preload" href="/assets/js/page--src--pages--index-vue.36ddb065.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.44fb8f5e.js"><link rel="prefetch" href="/assets/js/page--src--pages--sobre-vue.c84d8d65.js"><link rel="stylesheet" href="/assets/css/4.styles.2effc172.css"><style data-vue-tag="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #1976d2; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
   </head>
   <body >
-    <div data-server-rendered="true" id="app" class="layout"><header class="header"><strong><a href="/" aria-current="page" class="active--exact active">O Marceleza</a></strong></header><img alt="Principal" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 86 54' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-5ff3ecf93ff4aaf633a526fb8066c368'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-5ff3ecf93ff4aaf633a526fb8066c368)' width='86' height='54' xlink:href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAAAoCAYAAABOzvzpAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAHuUlEQVRo3u1YSWzcVBj2MuMZr7NknIntaZqmCUlIQ1MmoTRtYk%2bDWCsaUMqSboRWqL2wHoADQhyROIEEFyQkOHDiyAmQuHAoAontgCgHBBIgNoGglZLMxHxvsccZUijJAGKUJ/15fs4b%2b33f%2b//v/58FoYOa6fhCzjsYXYuWW5Na5xS8mS7TCaZMN6gKD3cQeL17VigM7mPg3UCO7ucsT7A8f9R0/Scsx3/Dcv1PQcCS5QYv0AmKsU1QC7sEszwlqKU9gpofFtXciJi1BsRsbhDXQ6JaGBF1e1LQusaFjLlTSKku/W3G6v/vd90NBMObicdWZYbueqYwKcML5gD4LYBfgTeElncwZP116P2nN/zSSvVRUe3aLWeMXjG6l9HK/wkBee7ylntQKGyboesx3GDSpLtNABMLQuz6Kvq6RXbfmw3RP8Y8QCvKiuYZemmPoeQG3YzZF2T0/kOKvu3OjLl9MWP03aCY24bV/EiBzMNPsskFwCvSqaxNX6zolX8VvG37PK5rglGaFplH%2bIvwigsMpF/HuAEj4FdBCulXmAcEpxkB5vYTAHHR6Nn/q%2bnMrGBSuI41zJ4DS3pp4keEyyda1%2b5Hs8VR8vbuaDFZa1DWC2NsN3qCfz7mK3D7/hq9Vp1piYfDQ9GOA/wyB07GUR9iznIOBJhecJj%2bOK25h4zy/hXKmOuH0UT%2bo9XEmMfPLI0hEBbq3ZMfqIXRp0RZjcUAoRErr5xx/jnXd2aZBnhM8LC%2bu%2bj6GMh6AnATAzyA6gEwoD8QP8zo3nuOCURQJ27SapH7cGvAiKgsc1cK8fvv1dzw40QKWAqailVY0dtPgla5jnmaE0jM4/ydAPc1JcBh4CO3j4mABoCMBiflR/TD8QOh9i9y9hoJ0GGrxWS4MRl1SoTL1BWh9FFKc0bIM0vD9yQE0mt/CHi%2bUC5yL3D9Z8lmoF9qdfnk7hNNoBvt%2bOdgRSGxS2Nmz/56BPJSBDTNj8iI5jeYuMwiLPZeyJj9t5LnFkfuaxYiar6N8OcJaKb4Xm0HFb217r66zsaR68hrX6K/Lc9ICTXf/T6NDQbmMkjgD26GCGF2hTBslPc1kE3u5m5Kw6HkHWob/MLOKsIs4KofPEDeGbv3%2buuOQ5l7wzG2tpkUYZKygILndmQB4srLFMxlkpAMDX69QkICJCyjUKJ5Si%2bOp%2bg7imNtI8HyeNpz/Dd57DfMP7p%2bUgfqZF2Y/2HB8WkqzznIVorqRrGKWuDqczSWAAIMh9ZlErBGH1jaZOFgT34rKXkqAJncsNS2%2bC%2bz/J8tzWTwrq8IAdRz16yXKH4Engg3ua4RnZjjupEIz8JImuXynSfNnmniBY3L04JLk8DibTbErr/eFNshxFpp0wQYcfz7IwD5EwfWWOPyvAZAX6fgaeoLnmI7zypGEIY/AzezvLrjJhYKxV2vsZoAorY2fjZCQp0Qqph9h5kXXCG259TH0h/6A3jPb4lSl%2b08SXksJOosu9EM92R8QML5QZBG2SCV6mJFi9JFFyfKSr9uV3/ggljfBAlkUTTt4HnvUfFyDtKFK%2brmagMAiyq/WdhFngEavPRdThZtGJ/H/cOxdnDvQb/mkSwTFFkVlzF3zKK4oacnJmpNUfw7wsjm1kjVuJrWK3ew0%2bf2VBtCQOL9PgD8mQogjOZ4Wg9QD/gc9gjCpMDI90XLCZoe0NrSvGLTSlelmLsO3qJ3XxNG4ZAEn0h/f0UAuV5igjhBz9%2b53htTqXRhkx7gRwefQYBdylWu567vf4z%2bFQC/M1OoKfF8b1oyOGjD8dd/KKrBxMcFlrYUo%2b8AMsMXUaVHhI2ERWuJfAkCIq9pcAK%2bkmR1gJJrbJdw2tw4AV4t6nPYiGdAxP0AHeC63KIVIv4n5OyodK795QFTyPdOMRLsPdxVxQJOgM8ir1%2bMD0Ok/CWnrQQZf2ZkvlGeCnGknmahdpXcDjGUhfE/1gc9NZl8EdJKDKzx90%2bmrjB65HkeDtXmyU4tTqBafA5hcR5HY/ZVhVrsHetYpMC1BnFT1AULNOP0HpJSWXvDwIcOLwjZ1LXxGAWNDNeXyY5blenoy9DGmc1aOxI1wpUkNTaLBindh528BS79oFYcexvC%2bQ2OxReMnqkGETucKVAFTq3CGjgXLBv25AW9VP0O5H2byQ0c4SIkSqq9mSwQuTgpZwXNZWBzQxP0nNDWhkWzdKn3SIY9kW79tyhreZS8JdUetzV7ohvEdGulcWrZ/Iidxf8UzSEnL4vQ97/84prW3ObJ0eiVsOup0sCx/yeYzSVgQ7D0KvcIh%2bR0ZI8roBXjqM/34ni5jxpcn441uyroXeMQvV2kzBZSBvsuoOWHyKcjYattta221bbaVttqW%2b1S7dgx%2bvFWWFhYINfS8ePHpegerjsD5MmTJwXf9yNQMiwNE5MkkPvRuGOAt7b5%2bflWYuSjR4%2bKhCBOxCDADydI6RwPmJubi3b3NtjDsFJLKNwL%2bwX2JazC73XGWeTEiRMiJyIP4J%2bdOXMmBLjzsCcxHkP/8uLiYnjq1KkQ41cxX%2bNkiR1BQNKdcT2P63cJ4NOnTxMiVnj/G%2b4/1CqOHdUiEs6ePUtE8AhAvg6vIODfwbjaCh760DnAE6ktVnsAVDDehf8ZiQwRkxCJ42bb7%2b7NXuYtsAtFAAAAAElFTkSuQmCC' /%3e%3c/svg%3e" width="86" data-src="/assets/static/favicon.ff426a1.2d9731c0f07949a850f50077ae1e3731.png" data-srcset="/assets/static/favicon.ff426a1.2d9731c0f07949a850f50077ae1e3731.png 86w" data-sizes="(max-width: 86px) 100vw, 86px" class="g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/favicon.ff426a1.2d9731c0f07949a850f50077ae1e3731.png" class="g-image g-image--loaded" width="86" alt="Principal"></noscript><h1>Olá Mundo !!!</h1></div>
-    <script>window.__INITIAL_STATE__={"data":null,"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.ab9c5987.js" defer></script><script src="/assets/js/page--src--pages--index-vue.616516de.js" defer></script>
+    <div data-app="true" data-server-rendered="true" id="app" id="app" class="v-application v-application--is-ltr theme--light"><div class="v-application--wrap"><main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;"><div class="v-main__wrap"><header class="mb-9 v-sheet theme--light v-toolbar" style="height:56px;"><div class="v-toolbar__content" style="height:56px;"><div class="v-toolbar__title"><div class="v-avatar mr-5 rounded-0" style="height:50px;min-width:50px;width:50px;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--contain" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div></div><span>O Marceleza</span></div><div class="spacer"></div><div class="v-toolbar__items"><a href="/" aria-current="page" class="v-btn--active v-btn v-btn--flat v-btn--icon v-btn--round v-btn--router theme--light v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-compass-rose theme--light"></i></span></a><a href="/sobre" class="v-btn v-btn--flat v-btn--icon v-btn--round v-btn--router theme--light v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-information-variant theme--light"></i></span></a></div></div></header><div class="container"><div class="row no-gutters"><div class="col-sm-6 col-6"><!----></div></div></div></div></main></div></div>
+    <script>window.__INITIAL_STATE__={"data":null,"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.189aa255.js" defer></script><script src="/assets/js/page--src--pages--index-vue.36ddb065.js" defer></script>
   </body>
 </html>
