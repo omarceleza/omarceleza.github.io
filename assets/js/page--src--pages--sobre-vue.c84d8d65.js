@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{vYCS:function(t,e,n){"use strict";n.r(e);var s={metaInfo:{title:"Sobre Nós"}},o=n("KHd+"),l=Object(o.a)(s,(function(){var t=this.$createElement,e=this._self._c||t;return e("Layout",[e("h1",[this._v("Sobre nós")])])}),[],!1,null,null,null);e.default=l.exports}}]);
